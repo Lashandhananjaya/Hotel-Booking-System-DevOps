@@ -6,7 +6,7 @@ function Rooms() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/rooms")
+    fetch("/api/rooms")
       .then((res) => res.json())
       .then((data) => setRooms(data))
       .catch((err) => console.log("Error fetching rooms:", err));

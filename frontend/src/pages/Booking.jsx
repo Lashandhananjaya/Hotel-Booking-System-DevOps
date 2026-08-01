@@ -14,7 +14,7 @@ function Booking() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
-  const API_URL = "http://localhost:5000/api/bookings";
+  const API_URL = "/api/bookings";
 
   useEffect(() => {
     fetchBookings();

@@ -7,7 +7,7 @@ function Admin() {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const API_URL = "http://localhost:5000/api/rooms";
+  const API_URL = "/api/rooms";
 
   useEffect(() => {
     fetchRooms();
