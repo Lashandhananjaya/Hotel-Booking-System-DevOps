@@ -38,7 +38,7 @@ pipeline {
                     sh "scp -o StrictHostKeyChecking=no -r ./* ${SSH_USER}@${EC2_IP}:${APP_DIR}/"
                     
                     // Run docker-compose up on the EC2 server
-                    sh "ssh -o StrictHostKeyChecking=no ${SSH_USER}@${EC2_IP} 'cd ${APP_DIR} && sudo docker-compose up -d --build'"
+                    sh "ssh -o StrictHostKeyChecking=no ${SSH_USER}@${EC2_IP} 'cd ${APP_DIR} && sudo docker-compose down && sudo docker-compose up -d --build'"
                 }
             }
         }
