@@ -1,0 +1,22 @@
+# Ignore node_modules
+**/node_modules/
+
+# Ignore environment files
+**/.env
+
+# Ignore logs
+*.log
+
+# Ignore build folders
+dist/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore Terraform state and keys
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+.terraform.lock.hcl
+*.pem
