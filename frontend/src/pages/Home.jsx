@@ -6,7 +6,7 @@ function Home() {
       <section style={{ textAlign: "center", padding: "80px 20px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <p style={{ color: "var(--accent)", fontWeight: "600", textTransform: "uppercase", letterSpacing: "2px", marginBottom: "16px" }}>
-            Welcome to Paradise Hotel
+            Welcome to Paradise Hotel 123
           </p>
 
           <h1 className="gradient-text" style={{ fontSize: "64px", marginBottom: "24px", lineHeight: "1.1" }}>
