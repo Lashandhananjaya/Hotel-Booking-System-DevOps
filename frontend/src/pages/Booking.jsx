@@ -60,7 +60,7 @@ function Booking() {
 
   return (
     <div className="page" style={{ padding: "40px 20px" }}>
-      <h1 className="gradient-text">Manage Bookings</h1>
+      <h1 className="gradient-text" style={{ padding: "inherit" }}>Manage Bookings</h1>
       
       <div className="glass-panel" style={{ maxWidth: "600px", margin: "0 auto" }}>
         <h2>Create a Reservation</h2>

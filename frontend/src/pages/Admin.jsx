@@ -48,25 +48,27 @@ function Admin() {
 
   return (
     <div className="page" style={{ padding: "40px 20px" }}>
-      <h1 className="gradient-text">Admin Dashboard</h1>
+      <h1 className="gradient-text" style={{ padding: "inherit" }}>Admin Dashboard</h1>
 
-      <div className="glass-panel" style={{ maxWidth: "600px", margin: "0 auto 40px" }}>
+      <div
+        className="glass-panel"
+        style={{maxWidth: "600px",margin: "60px auto 40px"}}>
         <h2>Add New Room</h2>
         {message && <p style={{ color: message.includes("Failed") || message.includes("Error") ? "red" : "green", marginBottom: "16px" }}>{message}</p>}
-        
+
         <form onSubmit={handleAddRoom}>
-          <input 
-            type="text" 
-            className="premium-input" 
-            placeholder="Room Name" 
+          <input
+            type="text"
+            className="premium-input"
+            placeholder="Room Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
           />
-          <input 
-            type="number" 
-            className="premium-input" 
-            placeholder="Room Price (Rs.)" 
+          <input
+            type="number"
+            className="premium-input"
+            placeholder="Room Price (Rs.)"
             value={price}
             onChange={(e) => setPrice(e.target.value)}
             required

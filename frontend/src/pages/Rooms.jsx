@@ -18,7 +18,7 @@ function Rooms() {
 
   return (
     <div className="page" style={{ padding: "40px 20px" }}>
-      <h1 className="gradient-text">Available Rooms</h1>
+      <h1 className="gradient-text" style={{ padding: "inherit" }}>Available Rooms</h1>
       <p style={{ color: "var(--text)", marginBottom: "40px" }}>
         Discover our world-class accommodations and find your perfect stay.
       </p>
