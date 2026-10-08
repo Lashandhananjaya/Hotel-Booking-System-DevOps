@@ -32,7 +32,7 @@ function Navbar() {
 
       <div style={{ display: "flex", gap: "8px" }}>
         <Link to="/" style={getLinkStyle("/")}>Home</Link>
-        <Link to="/rooms" style={getLinkStyle("/rooms")}>Rooms</Link>
+        <Link to="/rooms" style={getLinkStyle("/rooms")}>abc</Link>
         <Link to="/booking" style={getLinkStyle("/booking")}>Booking</Link>
         <Link to="/admin" style={getLinkStyle("/admin")}>Admin</Link>
       </div>
